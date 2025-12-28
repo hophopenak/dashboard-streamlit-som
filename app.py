@@ -123,7 +123,7 @@ st.subheader(f"📈 Ringkasan Cluster {selected_provinsi}")
 col_metrics = st.columns(4)
 col_metrics[0].metric("IKP Rata-rata", f"{filtered_data['IKP'].mean():.2f}")
 col_metrics[1].metric("Produktivitas Padi", f"{filtered_data['Produktivitas_Padi'].mean():.2f} ku/ha")
-col_metrics[2].metric("Produksi Beras", f"{filtered_data['Produksi_Padi'].sum():,.0f} ton")
+col_metrics[2].metric("Produksi Padi", f"{filtered_data['Produksi_Padi'].sum():,.0f} ton")
 col_metrics[3].metric("PDRB", f"{filtered_data['PDRB'].sum():,.0f}")
 
 # Ringkasan cluster tabel
